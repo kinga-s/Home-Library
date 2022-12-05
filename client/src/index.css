@@ -1,0 +1,153 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.add_book{
+  font-size: 2rem;
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  background-color: rgb(103, 60, 79);
+  color: rgb(53, 40, 29);
+}
+
+.booklist{
+  width: 90vw;
+  max-width: 1170px;
+  margin: 5rem auto;
+  display: grid;
+  gap: 2rem;
+  align-items: start;
+}
+
+@media screen and (min-width: 768px){
+  .booklist {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.book{
+  background-color: rgb(231, 231, 231);
+  border-radius: 1rem;
+  padding: 1rem 2rem;
+}
+
+.book h1{
+  margin-top: 0.5rem;
+  font-size: 1.5rem;
+}
+
+.book img{
+  max-height: 300px;
+}
+
+.book h5{
+  margin-top: 0.25rem;
+  color: rgb(252, 122, 30);
+}
+
+.products {
+  margin: 4rem 0;
+  display: grid;
+  gap: 2rem;
+}
+@media screen and (min-width: 576px) {
+  .products {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+}
+.product {
+  background: rgb(231, 231, 231);
+  border-radius: 0.25rem;
+  text-align: center;
+}
+.product img {
+  border-top-left-radius: 0.25rem;
+  border-top-right-radius: 0.25rem;
+
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.product h4 {
+  margin-top: 1rem;
+}
+
+.guziki{
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: end;
+
+}
+
+.guziki button{
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+}
+
+.popout {
+  background-color: rgb(231, 231, 231);
+  color: rgb(201, 124, 93);
+  text-align: left;
+}
+
+.my-button {
+  background-color: rgb(201, 124, 93);
+  border: none;
+}
+.edit-button:hover{
+  background-color: rgb(201, 124, 93);
+}
+
+.popout-header{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: rgb(53, 40, 29);
+}
+
+.modal-body h4{
+  margin-top: 1rem
+}
+.modal-body h5{
+  margin-top: 2rem;
+}
+
+#buttonImage{
+  border: none;
+  border-top-left-radius: 0.25rem;
+  border-top-right-radius: 0.25rem;
+
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.close{
+  color: rgb(231, 231, 231);
+  background-color: transparent;
+  border: none;
+  font-size: 2rem;
+}
